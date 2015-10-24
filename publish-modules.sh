@@ -46,7 +46,7 @@ function generate {
       module=${module/modules\//}
       module="${module%/*}"
 
-      version="0.0.4" # $(npm info $module version)
+      version="0.0.6" # $(npm info $module version)
 
 
       mkdir $name
