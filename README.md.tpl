@@ -19,7 +19,12 @@ Or include the script in your HTML file.
 ```html
 <script src = "node_modules/{name}/index.js">
 ```
+
+# Generation info
+The code for generating the modules is in [this repository](https://github.com/kirjs/publish-highcharts-modules)
+
 # Issues
-[Use Highcharts repository to file the issues](https://github.com/highslide-software/highcharts.com/issues)
+[Issues with the way modules work](https://github.com/highslide-software/highcharts.com/issues)
+[Issues with the way modules were generated](https://github.com/kirjs/publish-highcharts-modules)
 
 
