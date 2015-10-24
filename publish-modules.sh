@@ -46,7 +46,7 @@ function generate {
       module=${module/modules\//}
       module="${module%/*}"
 
-      version="0.0.3" # $(npm info $module version)
+      version="0.0.4" # $(npm info $module version)
 
 
       mkdir $name
@@ -70,7 +70,7 @@ function generate {
       sed -i '' "s/{module}/$module/" $readmeFile
 
       cd $name
-      #npm publish
+      npm publish
       cd ..
 
       echo "## $name" >> $list
