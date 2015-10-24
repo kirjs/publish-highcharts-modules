@@ -70,11 +70,12 @@ function generate {
       sed -i '' "s/{module}/$module/" $readmeFile
 
       cd $name
-      npm publish
+      #npm publish
       cd ..
 
       echo "## $name" >> $list
       echo "[npm link](https://www.npmjs.com/package/$name)"@$version >> $list
+      echo "" >> $list
       echo '`npm install $name`' >> $list
       echo "" >> $list
 
