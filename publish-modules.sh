@@ -74,9 +74,9 @@ function generate {
       cd ..
 
       echo "## $name" >> $list
-      echo "[npm link](https://www.npmjs.com/package/$name)"@$version >> $list
+      echo "[$name](https://www.npmjs.com/package/$name)"@$version >> $list
       echo "" >> $list
-      echo '`npm install $name`' >> $list
+      echo "\`npm install $name\`" >> $list
       echo "" >> $list
 
     fi
