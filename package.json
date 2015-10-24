@@ -1,0 +1,12 @@
+{
+  "name": "publish-highcharts-modules",
+  "version": "1.0.0",
+  "description": "publish highchart modules to separate npm packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish-modules": "sh ./publish-modules.sh"
+  },
+  "author": "",
+  "license": "ISC"
+}
