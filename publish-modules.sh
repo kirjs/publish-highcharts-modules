@@ -17,6 +17,11 @@ cd $dir
 echo "folder created."
 
 
+# Generate list of modules
+list="../modules.md"
+echo "# List of generated modules " > $list
+echo "" >> $list
+
 function generate {
 
   # Iterate ove a list of files
@@ -68,6 +73,10 @@ function generate {
       npm publish
       cd ..
 
+      echo "## $name" >> $list
+      echo "[npm link](https://www.npmjs.com/package/$name)"@$version >> $list
+      echo '`npm install $name`' >> $list
+      echo "" >> $list
 
     fi
   done
