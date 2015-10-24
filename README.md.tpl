@@ -24,7 +24,9 @@ Or include the script in your HTML file.
 The code for generating the modules is in [this repository](https://github.com/kirjs/publish-highcharts-modules)
 
 # Issues
+
 [Issues with the way modules work](https://github.com/highslide-software/highcharts.com/issues)
+
 [Issues with the way modules were generated](https://github.com/kirjs/publish-highcharts-modules)
 
 
