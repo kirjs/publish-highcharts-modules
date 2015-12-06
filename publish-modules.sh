@@ -46,7 +46,7 @@ function generate {
       module=${module/modules\//}
       module="${module%/*}"
 
-      version="0.0.3" # $(npm info $module version)
+      version="0.0.6" # $(npm info $module version)
 
 
       mkdir $name
@@ -59,6 +59,7 @@ function generate {
       packageFile="$name/package.json"
       cp ../package.json.tpl $packageFile
       sed -i '' "s/{name}/$name/" $packageFile
+      sed -i '' "s/{file}/$file/" $packageFile
       sed -i '' "s/{version}/$version/" $packageFile
       sed -i '' "s/{module}/$module/" $packageFile
 
@@ -66,11 +67,12 @@ function generate {
       readmeFile="$name/README.md"
       cp ../README.md.tpl $readmeFile
       sed -i '' "s/{name}/$name/" $readmeFile
+      sed -i '' "s/{file}/$file/" $readmeFile
       sed -i '' "s/{version}/$version/" $readmeFile
       sed -i '' "s/{module}/$module/" $readmeFile
 
       cd $name
-      #npm publish
+      npm publish
       cd ..
 
       echo "## $name" >> $list
