@@ -59,6 +59,7 @@ function generate {
       packageFile="$name/package.json"
       cp ../package.json.tpl $packageFile
       sed -i '' "s/{name}/$name/" $packageFile
+      sed -i '' "s/{file}/$file/" $packageFile
       sed -i '' "s/{version}/$version/" $packageFile
       sed -i '' "s/{module}/$module/" $packageFile
 
@@ -66,6 +67,7 @@ function generate {
       readmeFile="$name/README.md"
       cp ../README.md.tpl $readmeFile
       sed -i '' "s/{name}/$name/" $readmeFile
+      sed -i '' "s/{file}/$file/" $readmeFile
       sed -i '' "s/{version}/$version/" $readmeFile
       sed -i '' "s/{module}/$module/" $readmeFile
 
